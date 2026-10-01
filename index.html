@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
 <title>Osteria Del Comune Antico — menu fisso a pranzo, Via Comune Antico 62 Milano</title>
 <meta name="description" content="Osteria Del Comune Antico, Via Comune Antico 62 a Milano: menu fisso a 13 € a mezzogiorno, cucina casalinga, contorni a 4 € e torte della casa. Aperti a pranzo dal lunedì al venerdì. 02 642 5323.">
 <link rel="canonical" href="https://rotenzark.github.io/comune-antico/">
@@ -15,13 +16,50 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="img/favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Andika:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1">
 <script>document.documentElement.className=document.documentElement.className.replace('no-js','js');</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Osteria Del Comune Antico","servesCuisine":"Cucina casalinga","address":{"@type":"PostalAddress","streetAddress":"Via Comune Antico 62","addressLocality":"Milano","postalCode":"20125","addressCountry":"IT"},"telephone":"+39026425323","url":"https://rotenzark.github.io/comune-antico/","priceRange":"10-20 €","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","reviewCount":"320"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"12:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Thursday","Friday"],"opens":"19:30","closes":"22:30"}]}
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Osteria Del Comune Antico",
+  "servesCuisine": "Cucina casalinga",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Comune Antico 62",
+    "addressLocality": "Milano",
+    "postalCode": "20125",
+    "addressCountry": "IT"
+  },
+  "telephone": "+39026425323",
+  "url": "https://rotenzark.github.io/comune-antico/",
+  "priceRange": "10-20 €",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "12:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "19:30",
+      "closes": "22:30"
+    }
+  ]
+}
 </script>
 </head>
 <body>
@@ -183,7 +221,7 @@
       <p class="dove__don" data-i18n="dove.don">Attività <b>di proprietà di donne</b>, come indicato sulla loro scheda Google.</p>
     </div>
     <div class="dove__m reveal">
-      <iframe title="Mappa: Osteria Del Comune Antico, Via Comune Antico 62, Milano" data-i18n-title="dove.mappa" src="https://www.google.com/maps?q=Osteria+Del+Comune+Antico+Via+Comune+Antico+62+Milano&output=embed" width="600" height="450" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mappa-clic" data-mappa-clic style="--mappa-h: 450px"><template><iframe title="Mappa: Osteria Del Comune Antico, Via Comune Antico 62, Milano" data-i18n-title="dove.mappa" src="https://www.google.com/maps?q=Osteria+Del+Comune+Antico+Via+Comune+Antico+62+Milano&output=embed" width="600" height="450" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/search/?api=1&amp;query=Osteria%20Del%20Comune%20Antico%20Via%20Comune%20Antico%2062%20Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div>
     </div>
   </section>
 </main>
@@ -191,7 +229,7 @@
 <footer class="piede">
   <p class="piede__n">Osteria Del Comune Antico</p>
   <p class="piede__d" data-i18n="piede.d">Via Comune Antico 62, 20125 Milano · <a href="tel:+39026425323">02 642 5323</a></p>
-  <p class="piede__b" data-i18n="piede.b">Sito dimostrativo realizzato da <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · prezzi letti sul menu esposto, testi e recensioni da fonti pubbliche dell'attività.</p>
+  <p class="piede__b" data-i18n="piede.b">Sito dimostrativo realizzato da <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a> · prezzi letti sul menu esposto, testi e recensioni da fonti pubbliche dell'attività.</p>
 </footer>
 
 <div class="barra">
@@ -208,5 +246,6 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
